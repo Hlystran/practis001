@@ -1,0 +1,90 @@
+@font-face {
+    font-family: "Clash Display";
+    src: url(/fonts/ClashDisplay-Light.woff2);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "Clash Display";
+    src: url(/fonts/ClashDisplay-Semibold.woff2);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Satoshi";
+    src: url(/fonts/Satoshi-Regular.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Clash Display";
+    src: url(/fonts/ClashDisplay-Bold.woff2);
+    font-weight: 900;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-lite-gray: #f9f9f9;
+    --color-dark-primary: #2A254B;
+    --color-nav-links: #726e80;
+}
+
+header>div span {
+    justify-self: center;
+    font-family: "Clash Display";
+    font-size: 24px ;
+}
+
+header>div div.icons {
+    justify-self: end;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1vw;
+}
+
+header {
+    display: grid;
+    row-gap: 30px;
+    padding: 0 2vh;
+    padding-top: 20px;
+}
+
+header>div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 16px;
+}
+
+header nav li a {
+    text-decoration: none;
+    font-family: "Satoshi";
+    font-weight: 100;
+    color: var(--color-nav-links);
+}
+
+header nav li a:hover {
+    color: var(--color-black);
+    transition: all 0.7s;
+}
+
+header nav {
+    justify-self: center;
+    display: flex;
+    column-gap: 4vw;
+}
+
+header nav li {
+    list-style: none;
+    display: grid;
+}
+
+header>div svg {
+    height: 16px;
+}
